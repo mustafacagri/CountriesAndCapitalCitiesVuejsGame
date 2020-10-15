@@ -1,0 +1,342 @@
+:root {
+    --red: #ED1C24;
+    --darkRed: #dc3545;
+    --darkBlue: #212529;
+}
+
+.container-fluid {
+    max-width: 1600px;
+}
+
+body {
+    background: #34495e;
+    height: 100%;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    margin: 20px;
+    font-family: 'Open Sans', sans-serif;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px var(--darkRed);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+    outline: 1px solid var(--darkBlue);
+}
+
+img {
+    max-width: 100%
+}
+
+
+/* our custom box like a bootstrap card div */
+
+.mainbox {
+    margin-bottom: 2000px;
+    position: relative;
+    display: block;
+    background-color: #fff;
+    color: var(--darkBlue);
+    padding: 0px 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.mainbox.bottomredborder {
+    border-bottom: 2px solid var(--red);
+}
+
+.mainbox.bottomredborder a {
+    color: var(--darkBlue);
+}
+
+.mainbox:hover {
+    text-decoration: none;
+    background-color: #efefef;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.mainbox>.title {
+    position: relative;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #212529;
+    padding: 10px 15px;
+    line-height: 2rem;
+    border-bottom: 1px solid #efefef;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainbox>.title.withoutline {
+    border-bottom: 0px;
+}
+
+.mainbox>.title>.right {
+    float: right;
+    border-left: 1px solid #e8ebf5;
+    padding-left: 15px;
+    color: var(--darkBlue);
+}
+
+.mainbox>.title>.right:hover {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.mainbox>.title>.right:after {
+    content: "";
+    clear: both;
+    display: Block;
+}
+
+.mainbox>.title>.right select {
+    display: inline;
+    width: auto;
+    max-width: 350px;
+}
+
+.mainbox>.title>svg {
+    color: var(--red);
+    width: 30px;
+}
+
+.mainbox>.title:not(.withoutline):before {
+    bottom: -1px;
+    width: 120px;
+    height: 1px;
+    background: #dc3545;
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+.mainbox>.title:after {
+    content: "";
+    clear: both;
+    display: Block;
+}
+
+.mainbox>.content {
+    z-index: 9999999999999;
+    position: relative;
+    padding: 15px 20px;
+}
+
+.mainbox>.content .weighty {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.mainbox>.content>.golgeBg {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    font-size: 72px;
+    color: var(--red);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.mainbox>.content.helping-area {
+    line-height: 2rem;
+}
+
+.mainbox>.content.otherTools a {
+    color: var(--koyured);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.mainbox>.content.otherTools svg {
+    color: var(--koyured);
+    margin-right: 5px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.mainbox>.content.otherTools a:hover,
+.mainbox>.content.otherTools a:hover>svg {
+    color: var(--darkBlue);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+
+/* our custom box like a bootstrap card div */
+
+
+/* Buttons' Styles */
+
+.btn-group.special {
+    display: flex;
+}
+
+.special .btn {
+    flex: 1;
+    margin: 10px 15px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.special .btn:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f128";
+    margin-right: 10px;
+}
+
+.special .btn:hover:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    margin-right: 10px;
+}
+
+.special .btn:hover {
+    -webkit-box-flex: 1.6;
+    flex-grow: 1.6;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+
+/* Buttons' Styles */
+
+.fade-enter {
+    opacity: 0
+}
+
+.fade-enter-active {
+    transition: opacity 0.4s
+}
+
+.fade-leave-active {
+    transition: opacity 0.4s;
+    opacity: 0
+}
+
+.slide-enter {
+    opacity: 0
+}
+
+.slide-enter-active {
+    animation: slide-in 0.4s ease-out forwards;
+    transition: opacity .5s
+}
+
+.slide-leave-active {
+    animation: slide-out 0.4s ease-out forwards;
+    transition: opacity 1s;
+    opacity: 0;
+    position: absolute
+}
+
+.slide-move {
+    transition: transform 0.4s
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(20px)
+    }
+    to {
+        transform: translateY(0px)
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateY(0px)
+    }
+    to {
+        transform: translateY(20px)
+    }
+}
+
+@media only screen and (max-width: 692px) {
+    body {
+        margin: 0px;
+        margin-top: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .nomobile {
+        display: none;
+    }
+    .btn-group.special {
+        display: block;
+    }
+    .special .btn {
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+        border-radius: 10px;
+        font-family: 'Open Sans', sans-serif;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    .btn-group>.btn-group:not(:first-child)>.btn,
+    .btn-group>.btn:not(:first-child),
+    .btn-group>.btn-group:not(:last-child)>.btn,
+    .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+        border-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .mainbox>.title>.right {
+        float: none;
+        display: block;
+        text-align: center;
+        border-left: 0px solid #e8ebf5;
+        padding-left: 0;
+        margin: 5px 0;
+        color: var(--darkBlue);
+    }
+    .mainbox>.content.scroll {
+        z-index: 9999999999999;
+        position: relative;
+        padding: 15px 10px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+}
